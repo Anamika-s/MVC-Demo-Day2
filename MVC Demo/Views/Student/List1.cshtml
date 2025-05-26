@@ -1,0 +1,17 @@
+﻿@model IEnumerable<MVC_Demo.Models.Student>
+@{
+    ViewData["Title"] = "List1";
+}
+
+<h1>List of Students </h1>
+
+@{
+    foreach(var student in Model)
+    {
+           @student.Id @student.Name <br/>
+    }
+}
+
+  
+
+// CRUD operations on an entity
