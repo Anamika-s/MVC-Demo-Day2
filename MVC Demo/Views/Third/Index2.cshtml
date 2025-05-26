@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewData["Title"] = "Index2";
+}
+
+<h1>Index2</h1>
+
+<h2> Hello @ViewBag.name </h2>
+Today is @ViewData["date"]
+
+
+@foreach (var name in @ViewBag.names)
+   {
+            @name<br/>
+    }
+
+@{
+    foreach(var name in (List<string>)@ViewData["names"])
+{
+    @name
+    <br />
+}
+}
+
+
+ <b> Manager Name is @TempData["manager"] </b>
